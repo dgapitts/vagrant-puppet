@@ -2,12 +2,12 @@
 
 Training environment for learning how to work with puppet.
 
-## v0.01 initial setup of puppetmaster server 
+## v0.01 initial setup of puppetmaster server (with r10k gem/module) by provision.sh
 
 
 A few points to highlight
-* My ubuntu laptop has 16G of RAM and given the master puppet java process needs 512M (i.e. 05G), I've setup the VM with 2G
-* The provision.sh automates the basic setup
+* My ubuntu dev environment (only running VS Code and the odd browser session) has 16G of RAM and given the master puppet java process needs 512M (i.e. 0.5G), so I've setup the VM with 2G i.e. still leaving 14G for the host environment. However 1G should be enough if you are running on a busier dev environment (e.g. my MacAir laptop only has 4Gb). 
+* The provision.sh automates the basic setup, I've documented the main customizations below
 
 
 As I've set my VM name to puppetmaster
