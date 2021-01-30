@@ -2,6 +2,31 @@
 
 Training environment for learning how to work with puppet.
 
+
+
+### v0.02 r10k setup and linking to remote github repo
+
+Updated provision.sh shell script
+
+```
+  # v0.02 r10k setup and linking to remote github repo
+
+  echo '*** r10k setup and linking to remote repo https://github.com/dgapitts/puppet-control-repo.git'
+  mkdir /etc/puppetlabs/r10k
+  cat /vagrant/r10k.yaml > /etc/puppetlabs/r10k/r10k.yaml
+  cat /etc/puppetlabs/r10k/r10k.yaml
+  echo '*** exec r10k deploy environment -p'
+  r10k deploy environment -p
+  echo '*** show code deployed i.e. initial README.md file'
+  cat /etc/puppetlabs/code/environments/production/README.md
+  echo '*** show /etc/puppetlabs/code/environments/production/.git/config ' 
+  cat /etc/puppetlabs/code/environments/production/.git/config 
+```
+
+For more details please see [build_logs/v0.02_r10k_setup_linking_remote_github_repo.log](build_logs/v0.02_r10k_setup_linking_remote_github_repo.log)
+
+
+
 ## v0.01 initial setup of puppetmaster server (with r10k gem/module) by provision.sh
 
 

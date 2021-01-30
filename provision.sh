@@ -50,6 +50,19 @@ then
   echo '*** simple test via: puppet agent -t'
   puppet agent -t
 
+  # v0.02
+
+  echo '*** r10k setup and linking to remote repo https://github.com/dgapitts/puppet-control-repo.git'
+  mkdir /etc/puppetlabs/r10k
+  cat /vagrant/r10k.yaml > /etc/puppetlabs/r10k/r10k.yaml
+  cat /etc/puppetlabs/r10k/r10k.yaml
+  echo '*** exec r10k deploy environment -p'
+  r10k deploy environment -p
+  echo '*** show code deployed i.e. initial README.md file'
+  cat /etc/puppetlabs/code/environments/production/README.md
+  echo '*** show /etc/puppetlabs/code/environments/production/.git/config ' 
+  cat /etc/puppetlabs/code/environments/production/.git/config 
+
 
 else
   echo "already installed flag set : /home/vagrant/already-installed-flag"
