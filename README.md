@@ -1,7 +1,8 @@
 ## Summary
 
-Training environment for learning how to work with puppet.
+Training environment for learning how to work with puppet https://www.linkedin.com/learning/learning-puppet
 
+This repo can be used in conjunction with this training exercise to deploy postgres docker containers via puppet https://github.com/dgapitts/puppet-control-repo
 
 
 ### v0.02 r10k setup and linking to remote github repo
