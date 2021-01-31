@@ -7,7 +7,6 @@ fi
 
 # User specific environment and startup programs
 
-PATH=$PATH:/opt/puppetlabs/puppet/bin
-PATH=$PATH:$HOME/bin
+PATH=$PATH:/opt/puppetlabs/puppet/bin:$HOME/bin
 
 export PATH

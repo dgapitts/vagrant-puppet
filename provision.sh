@@ -50,7 +50,7 @@ then
   echo '*** simple test via: puppet agent -t'
   puppet agent -t
 
-  # v0.02
+  # v0.02 r10k setup and linking to remote github repo
 
   echo '*** r10k setup and linking to remote repo https://github.com/dgapitts/puppet-control-repo.git'
   mkdir /etc/puppetlabs/r10k
